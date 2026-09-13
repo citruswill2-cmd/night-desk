@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NIGHT DESK — first file for a new shop, then the board</title>
+  <meta name="description" content="NIGHT DESK writes the first website people starting a business can own, then pins other live sites on one night board so they are not quiet." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            void: "#050506",
+            desk: "#101114",
+            rail: "#1C1E24",
+            paper: "#E8E4DA",
+            mute: "#8B8790",
+            live: "#4D8BFF",
+            heat: "#FF2B3A"
+          },
+          fontFamily: {
+            display: ["Bebas Neue", "Impact", "sans-serif"],
+            sans: ["Sora", "ui-sans-serif", "system-ui", "sans-serif"],
+            mono: ["IBM Plex Mono", "ui-monospace", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background:
+        radial-gradient(720px 280px at 18% -6%, rgba(77,139,255,.22), transparent 58%),
+        radial-gradient(420px 220px at 92% 8%, rgba(255,43,58,.12), transparent 52%),
+        linear-gradient(180deg, #050506 0%, #0B0C10 48%, #050506 100%);
+      color: #E8E4DA;
+    }
+    .lamp {
+      background:
+        linear-gradient(180deg, rgba(77,139,255,.08), transparent 70%),
+        #101114;
+    }
+    .reveal { opacity: 0; transform: translateY(12px); }
+    .tick {
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 10px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+    .slot {
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.04);
+    }
+  </style>
+</head>
+<body class="font-sans antialiased">
+  <a class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:bg-paper focus:text-void focus:px-3 focus:py-2" href="#board">Skip to the board</a>
+
+  <header class="sticky top-0 z-40 border-b border-white/10 bg-void/85 backdrop-blur">
+    <div class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3">
+      <a href="#top" class="font-display text-3xl tracking-wide text-paper">NIGHT DESK</a>
+      <nav class="flex gap-5 tick text-mute">
+        <a class="hover:text-paper" href="#job">Job</a>
+        <a class="hover:text-paper" href="#board">Board</a>
+        <a class="text-heat hover:text-paper" href="brief.html">File a brief</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="mx-auto max-w-5xl px-4 pb-24">
+    <section class="reveal lamp mt-7 overflow-hidden border border-white/10 px-5 py-10 md:px-10 md:py-14">
+      <div class="flex flex-wrap items-baseline justify-between gap-2 tick text-mute">
+        <span class="text-live">Desk lamp on · Chris</span>
+        <span>Young adults + adults</span>
+        <span>citruswill2@gmail.com</span>
+      </div>
+      <h1 class="mt-5 font-display text-[13vw] leading-[0.78] tracking-tight text-paper sm:text-7xl md:text-8xl lg:text-9xl">
+        THE SHOP IS REAL.<br /><span class="text-live">THE PAGE IS IN THE TRAY.</span>
+      </h1>
+      <p class="mt-6 max-w-2xl text-base leading-relaxed text-paper/75 md:text-lg">
+        You already have the name. You do not have a site, or you have one and nobody is looking.
+        NIGHT DESK writes the first HTML file you own — then pins other live URLs on the same board.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="brief.html" class="bg-heat px-5 py-3 font-display text-xl tracking-wide text-paper hover:bg-live hover:text-void">FILE A BRIEF</a>
+        <a href="#board" class="border border-paper/30 px-5 py-3 font-display text-xl tracking-wide text-paper hover:border-live hover:text-live">READ THE BOARD</a>
+      </div>
+    </section>
+
+    <section id="job" class="reveal mt-6 grid border border-white/10 md:grid-cols-3">
+      <article class="border-b border-white/10 bg-desk p-6 md:border-b-0 md:border-r">
+        <p class="tick text-heat">01 · paragraph</p>
+        <h2 class="mt-2 font-display text-4xl leading-none">SAY IT ONCE</h2>
+        <p class="mt-3 text-sm leading-relaxed text-paper/65">Name. What it does. Who it is for. Budget if you have one. Live URL if you already have one.</p>
+      </article>
+      <article class="border-b border-white/10 bg-desk p-6 md:border-b-0 md:border-r">
+        <p class="tick text-live">02 · file</p>
+        <h2 class="mt-2 font-display text-4xl leading-none">OWN THE HTML</h2>
+        <p class="mt-3 text-sm leading-relaxed text-paper/65">Tailwind, light anime.js, about half a second. No CMS. Drop it on Vercel. Keep the file.</p>
+      </article>
+      <article class="bg-desk p-6">
+        <p class="tick text-mute">03 · board</p>
+        <h2 class="mt-2 font-display text-4xl leading-none">PIN THE LIVE ONES</h2>
+        <p class="mt-3 text-sm leading-relaxed text-paper/65">Blue is a public URL. Red is studio heat. Gray waits in the tray until the address works.</p>
+      </article>
+    </section>
+
+    <section class="reveal mt-6 grid border border-white/10 md:grid-cols-2">
+      <article class="border-b border-white/10 bg-desk p-6 md:border-b-0 md:border-r md:p-8">
+        <p class="tick text-heat">Lane A · first file</p>
+        <h2 class="mt-2 font-display text-5xl leading-none">START THE SHOP</h2>
+        <p class="mt-4 text-base leading-relaxed text-paper/70">
+          For people who just decided and do not know the stack. Not a course. Not a builder login.
+          A phone-first page with your name on it, readable in one thumb.
+        </p>
+        <ul class="mt-5 space-y-1 font-mono text-[12px] text-mute">
+          <li>— Tailwind + light anime.js + ~0.5s</li>
+          <li>— No CMS, no ads, no payments</li>
+          <li>— You keep the HTML</li>
+        </ul>
+      </article>
+      <article class="bg-desk p-6 md:p-8">
+        <p class="tick text-live">Lane B · night board</p>
+        <h2 class="mt-2 font-display text-5xl leading-none">PROMOTE WHAT IS UP</h2>
+        <p class="mt-4 text-base leading-relaxed text-paper/70">
+          Sites that are already live but quiet get a pin under one lamp. Promotion is a board, not a feed.
+          Send a URL if that is the job. Send a paragraph if the file does not exist yet.
+        </p>
+        <ul class="mt-5 space-y-1 font-mono text-[12px] text-mute">
+          <li>— Iris Onyx keeps the Utah / lights-off cadence</li>
+          <li>— Dee’s lot sells without a cart</li>
+          <li>— Empty tray is the next name</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="board" class="reveal mt-14">
+      <div class="flex flex-wrap items-end justify-between gap-3 border-b border-white/15 pb-3">
+        <div>
+          <p class="tick text-mute">Night board · public pins</p>
+          <h2 class="font-display text-6xl leading-none text-paper md:text-7xl">ON THE DESK</h2>
+        </div>
+        <p class="tick text-mute">Blue live · red heat · gray tray</p>
+      </div>
+
+      <ol class="mt-0">
+        <li class="slot border-b border-white/10">
+          <a class="group grid gap-2 py-5 sm:grid-cols-[92px_1fr_auto] sm:items-baseline" href="https://iris0nyx.com/" target="_blank" rel="noopener">
+            <span class="tick text-live">01 · live</span>
+            <span>
+              <span class="block font-display text-4xl leading-none text-paper group-hover:text-live">IRIS ONYX</span>
+              <span class="mt-2 block max-w-xl text-sm leading-relaxed text-mute">Goth pop from Utah. Pop with teeth. Windows down. Lights off.</span>
+            </span>
+            <span class="font-mono text-[11px] text-live">iris0nyx.com</span>
+          </a>
+        </li>
+        <li class="slot border-b border-white/10">
+          <a class="group grid gap-2 py-5 sm:grid-cols-[92px_1fr_auto] sm:items-baseline" href="https://dnc-computerz.vercel.app/" target="_blank" rel="noopener">
+            <span class="tick text-live">02 · live</span>
+            <span>
+              <span class="block font-display text-4xl leading-none text-paper group-hover:text-live">DNC COMPUTERZ</span>
+              <span class="mt-2 block max-w-xl text-sm leading-relaxed text-mute">Towers, parts, screens on shop tickets. A bench page for what is sitting there.</span>
+            </span>
+            <span class="font-mono text-[11px] text-live">dnc-computerz.vercel.app</span>
+          </a>
+        </li>
+        <li class="slot border-b border-white/10">
+          <a class="group grid gap-2 py-5 sm:grid-cols-[92px_1fr_auto] sm:items-baseline" href="https://sameweekhq.vercel.app/" target="_blank" rel="noopener">
+            <span class="tick text-heat">03 · heat</span>
+            <span>
+              <span class="block font-display text-4xl leading-none text-paper group-hover:text-heat">REDLINE</span>
+              <span class="mt-2 block max-w-xl text-sm leading-relaxed text-mute">You describe the job. Chris builds the site. sameweekhq.vercel.app currently serves REDLINE.</span>
+            </span>
+            <span class="font-mono text-[11px] text-heat">sameweekhq.vercel.app</span>
+          </a>
+        </li>
+        <li class="slot border-b border-white/10">
+          <a class="group grid gap-2 py-5 sm:grid-cols-[92px_1fr_auto] sm:items-baseline" href="https://daytape.vercel.app/" target="_blank" rel="noopener">
+            <span class="tick text-live">04 · live</span>
+            <span>
+              <span class="block font-display text-4xl leading-none text-paper group-hover:text-live">DAYTAPE</span>
+              <span class="mt-2 block max-w-xl text-sm leading-relaxed text-mute">A day’s tape without a platform tax. Phone-first, short, already up.</span>
+            </span>
+            <span class="font-mono text-[11px] text-live">daytape.vercel.app</span>
+          </a>
+        </li>
+        <li class="slot border-b border-white/10">
+          <a class="group grid gap-2 py-5 sm:grid-cols-[92px_1fr_auto] sm:items-baseline" href="https://github.com/citruswill2-cmd/sameweek" target="_blank" rel="noopener">
+            <span class="tick text-mute">05 · tray</span>
+            <span>
+              <span class="block font-display text-4xl leading-none text-mute">SAMEWEEK</span>
+              <span class="mt-2 block max-w-xl text-sm leading-relaxed text-mute">Source is public. sameweek.vercel.app currently serves CAST — this line waits on its own project.</span>
+            </span>
+            <span class="font-mono text-[11px] text-mute">github.com/citruswill2-cmd/sameweek</span>
+          </a>
+        </li>
+        <li class="slot border-b border-white/10">
+          <a class="group grid gap-2 py-5 sm:grid-cols-[92px_1fr_auto] sm:items-baseline" href="https://github.com/citruswill2-cmd/laughline" target="_blank" rel="noopener">
+            <span class="tick text-mute">06 · tray</span>
+            <span>
+              <span class="block font-display text-4xl leading-none text-mute">LAUGHLINE</span>
+              <span class="mt-2 block max-w-xl text-sm leading-relaxed text-mute">Chris Williams comedy first-draft. laughline.vercel.app is still 404. File lives on GitHub.</span>
+            </span>
+            <span class="font-mono text-[11px] text-mute">github.com/citruswill2-cmd/laughline</span>
+          </a>
+        </li>
+        <li class="slot border-b border-white/10">
+          <a class="group grid gap-2 py-5 sm:grid-cols-[92px_1fr_auto] sm:items-baseline" href="brief.html">
+            <span class="tick text-heat">open</span>
+            <span>
+              <span class="block font-display text-4xl leading-none text-paper group-hover:text-heat">YOUR NAME</span>
+              <span class="mt-2 block max-w-xl text-sm leading-relaxed text-mute">New business or a live site that needs eyes. File the brief. Live URL gets a pin. No URL gets first file.</span>
+            </span>
+            <span class="font-mono text-[11px] text-heat">brief.html →</span>
+          </a>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10">
+    <div class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-4 py-6 tick text-mute">
+      <span>NIGHT DESK · files you own</span>
+      <a class="text-heat hover:text-paper" href="brief.html">File a brief</a>
+      <span>void · #4D8BFF · #FF2B3A</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+  <script>
+    (function () {
+      var nodes = document.querySelectorAll(".reveal");
+      if (window.anime) {
+        window.anime({
+          targets: nodes,
+          opacity: [0, 1],
+          translateY: [12, 0],
+          delay: window.anime.stagger(80),
+          duration: 340,
+          easing: "easeOutQuad"
+        });
+      } else {
+        nodes.forEach(function (n) {
+          n.style.opacity = "1";
+          n.style.transform = "none";
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
